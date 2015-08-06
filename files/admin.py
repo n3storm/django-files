@@ -14,6 +14,7 @@ class AttachmentAdminForm(forms.ModelForm):
     
     class Meta:
         model = Attachment
+        fields = "__all__"
         
     def clean_attachment(self):
         """
